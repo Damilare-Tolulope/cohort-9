@@ -11,7 +11,7 @@ const FormComponent = () => {
             return
         }
 
-        console.log(firstName, lastName, message);
+        console.log(`${firstName} ${lastName} says ${message}`);
     }
 
     return (

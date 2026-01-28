@@ -1,4 +1,6 @@
-import logo from "../assets/images/logo.avif"
+import { Link } from 'react-router-dom';
+
+import logo from "../assets/images/logo.avif";
 
 function Header() {
     return (
@@ -6,9 +8,9 @@ function Header() {
             <img style={{ borderRadius: "50%", width: '30px', height: '30px', cursor: "pointer" }} src={logo} alt="logo" />
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
         </header>
